@@ -16,13 +16,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatCardModule} from "@angular/material/card";
 import {FormsModule} from "@angular/forms";
 import { IntroAngularComponent } from './app-features/main/intro-angular/intro-angular.component';
+import {FocusColorDirective} from "./app-common/directives/pattern/focus-color.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     RecordTimeComponent,
-    IntroAngularComponent
+    IntroAngularComponent,
+    FocusColorDirective
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,9 @@ import { IntroAngularComponent } from './app-features/main/intro-angular/intro-a
     FormsModule
   ],
   providers: [],
+  exports: [
+    FocusColorDirective
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
