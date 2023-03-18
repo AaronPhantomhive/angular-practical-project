@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  margin-top: 100px;
+  height: 100%;
+}
+
+.card {
+  height: 200px;
+  width: 500px;
+  background: #f7f7f7;
+  margin: 8px;
+}
+
+.card-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-form {
+  margin-top: 50px;
+  max-height: 500px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-field {
+  width: 45%;
+  margin-left: 30px;
+}
+
+.input {
+  height: 36px;
+}
+
+.time-label {
+  margin-left: 60px;
+}

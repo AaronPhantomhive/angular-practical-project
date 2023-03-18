@@ -1,0 +1,24 @@
+<div class="outline">
+  <mat-card class="card" appFocusColor>
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>Record Time</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content class="card-content">
+      {{ currentTime | date: 'HH:mm:ss' }}
+    </mat-card-content>
+  </mat-card>
+  <div class="record-button">
+    <button mat-raised-button style="width: 150px; background: #ffaaa4" (click)="record()">记录</button>
+    <button mat-raised-button style="width: 150px; background: #899bff" (click)="saved()">保存</button>
+  </div>
+  <div class="input-form">
+    <div *ngFor="let recordTimeInfo of recordTimeInfos">
+      <mat-form-field class="input-field">
+        <input class="input" matInput [(ngModel)]="recordTimeInfo.inputMessage">
+      </mat-form-field>
+      <label class="time-label">{{recordTimeInfo.recordTime | date: 'yyyy-MM-dd HH:mm:ss'}}</label>
+    </div>
+  </div>
+</div>
