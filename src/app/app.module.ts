@@ -17,6 +17,8 @@ import {MatCardModule} from "@angular/material/card";
 import {FormsModule} from "@angular/forms";
 import { IntroAngularComponent } from './app-features/main/intro-angular/intro-angular.component';
 import {FocusColorDirective} from "./app-common/directives/pattern/focus-color.directive";
+import { UsefulToolsComponent } from './app-features/main/useful-tools/useful-tools.component';
+import { RecordTimeAGgridComponent } from './app-features/main/record-time-aggrid/record-time-aggrid.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {FocusColorDirective} from "./app-common/directives/pattern/focus-color.d
     MainComponent,
     RecordTimeComponent,
     IntroAngularComponent,
-    FocusColorDirective
+    FocusColorDirective,
+    UsefulToolsComponent,
+    RecordTimeAGgridComponent
   ],
   imports: [
     BrowserModule,

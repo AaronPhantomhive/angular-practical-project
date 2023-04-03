@@ -8,6 +8,8 @@
     <mat-nav-list>
       <a mat-list-item (click)="getLoadPage(1)">Angular2 Introduction</a>
       <a mat-list-item (click)="getLoadPage(2)">Record Time</a>
+      <a mat-list-item (click)="getLoadPage(3)">Record Time AgGrid</a>
+      <a mat-list-item (click)="getLoadPage(4)">Useful Tools</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -49,6 +51,12 @@
       <app-record-time
         *ngIf="loadPage === 2"
       ></app-record-time>
+      <app-record-time-aggrid
+        *ngIf="loadPage === 3"
+      ></app-record-time-aggrid>
+      <app-useful-tools
+        *ngIf="loadPage === 4"
+      ></app-useful-tools>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
