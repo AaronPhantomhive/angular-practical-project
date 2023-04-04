@@ -19,6 +19,7 @@ import { IntroAngularComponent } from './app-features/main/intro-angular/intro-a
 import {FocusColorDirective} from "./app-common/directives/pattern/focus-color.directive";
 import { UsefulToolsComponent } from './app-features/main/useful-tools/useful-tools.component';
 import { RecordTimeAGgridComponent } from './app-features/main/record-time-aggrid/record-time-aggrid.component';
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -30,20 +31,21 @@ import { RecordTimeAGgridComponent } from './app-features/main/record-time-aggri
     UsefulToolsComponent,
     RecordTimeAGgridComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatInputModule,
-    MatCardModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        LayoutModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatInputModule,
+        MatCardModule,
+        FormsModule,
+        MatGridListModule
+    ],
   providers: [],
   exports: [
     FocusColorDirective

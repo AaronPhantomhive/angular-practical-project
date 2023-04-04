@@ -1,1 +1,23 @@
-<p>useful-tools works!</p>
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-card class="card">
+      <mat-card-title></mat-card-title>
+      <mat-card-content>
+        <div>
+          <mat-form-field class="input-field">
+            <input class="input" matInput [(ngModel)]="inputEncodeUrl">
+          </mat-form-field>
+          <button (click)="encodeURL()">encode</button>
+          <span> encode: {{ encodeUrl }} </span>
+        </div>
+        <div>
+          <mat-form-field class="input-field">
+            <input class="input" matInput [(ngModel)]="inputDecodeUrl">
+          </mat-form-field>
+          <button (click)="decodeURL()">decode</button>
+          <span> decode: {{ decodeUrl }} </span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
