@@ -7,6 +7,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class RecordTimeComponent implements OnInit {
   currentTime: Date = new Date();
+  currentTimestamp: number = Math.round(new Date().getTime() / 1000);
 
   @Input() recordTimeInfos: RecordTimeInfo[] = [];
 
@@ -19,6 +20,7 @@ export class RecordTimeComponent implements OnInit {
   RunningTime() {
     setInterval(() => {
       this.currentTime = new Date();
+      this.currentTimestamp = Math.round(new Date().getTime() / 1000);
     }, 1000);
   }
 

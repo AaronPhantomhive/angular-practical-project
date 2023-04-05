@@ -6,7 +6,8 @@
       </mat-card-title-group>
     </mat-card-header>
     <mat-card-content class="card-content">
-      {{ currentTime | date: 'HH:mm:ss' }}
+      <div>{{ currentTime | date: 'HH:mm:ss' }}</div>
+      <div>{{ currentTimestamp }}</div>
     </mat-card-content>
   </mat-card>
   <div class="record-button">
