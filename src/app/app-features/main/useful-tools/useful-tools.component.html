@@ -1,23 +1,33 @@
 <mat-grid-list cols="3" rowHeight="2:1">
+
+  <!-- url encode & decode -->
   <mat-grid-tile>
     <mat-card class="card">
-      <mat-card-title></mat-card-title>
-      <mat-card-content>
-        <div>
+      <mat-card-title class="card-title">url encode & decode</mat-card-title>
+      <mat-card-content class="card-context">
+        <div style="margin-top: 30px">
           <mat-form-field class="input-field">
-            <input class="input" matInput [(ngModel)]="inputEncodeUrl">
+            <input class="input" matInput [(ngModel)]="encodeUrl">
           </mat-form-field>
-          <button (click)="encodeURL()">encode</button>
-          <span> encode: {{ encodeUrl }} </span>
+          <mat-button-toggle (click)="encodeURL()">encode</mat-button-toggle>
         </div>
-        <div>
+        <div style="margin-top: 30px">
           <mat-form-field class="input-field">
-            <input class="input" matInput [(ngModel)]="inputDecodeUrl">
+            <input class="input" matInput [(ngModel)]="decodeUrl">
           </mat-form-field>
-          <button (click)="decodeURL()">decode</button>
-          <span> decode: {{ decodeUrl }} </span>
+          <mat-button-toggle (click)="decodeURL()">decode</mat-button-toggle>
         </div>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
+
+  <!--  -->
+  <mat-grid-tile>
+    <mat-card class="card">
+      <mat-card-title class="card-title"></mat-card-title>
+      <mat-card-content class="card-context">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
 </mat-grid-list>

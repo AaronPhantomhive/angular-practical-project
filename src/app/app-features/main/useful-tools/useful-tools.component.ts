@@ -7,22 +7,26 @@ import {Component, OnInit} from '@angular/core';
 })
 export class UsefulToolsComponent implements OnInit {
 
-  inputEncodeUrl: string = "";
   encodeUrl: string = "";
-  inputDecodeUrl: string = "";
   decodeUrl: string = "";
 
   ngOnInit(): void {
   }
 
   encodeURL() {
+    if(!this.encodeUrl) {
+      return;
+    }
     // encodeURIComponent
-    this.encodeUrl = encodeURI(this.inputEncodeUrl)
+    this.decodeUrl = encodeURI(this.encodeUrl)
   }
 
   decodeURL() {
+    if(!this.decodeUrl) {
+      return;
+    }
     // decodeURIComponent
-    this.decodeUrl = decodeURI(this.inputDecodeUrl)
+    this.encodeUrl = decodeURI(this.decodeUrl)
   }
 
 }

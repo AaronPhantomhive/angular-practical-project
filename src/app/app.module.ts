@@ -20,6 +20,7 @@ import {FocusColorDirective} from "./app-common/directives/pattern/focus-color.d
 import { UsefulToolsComponent } from './app-features/main/useful-tools/useful-tools.component';
 import { RecordTimeAGgridComponent } from './app-features/main/record-time-aggrid/record-time-aggrid.component';
 import {MatGridListModule} from "@angular/material/grid-list";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
         MatInputModule,
         MatCardModule,
         FormsModule,
-        MatGridListModule
+        MatGridListModule,
+        MatButtonToggleModule
     ],
   providers: [],
   exports: [
