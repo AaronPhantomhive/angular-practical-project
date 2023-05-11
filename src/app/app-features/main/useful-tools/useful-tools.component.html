@@ -21,7 +21,28 @@
     </mat-card>
   </mat-grid-tile>
 
-  <!--  -->
+  <!-- 26 numeration -->
+  <mat-grid-tile>
+    <mat-card class="card">
+      <mat-card-title class="card-title">26 numeration</mat-card-title>
+      <mat-card-content class="card-context">
+        <div style="margin-top: 30px">
+          <mat-form-field class="input-field">
+            <input class="input" matInput [(ngModel)]="num" placeholder="number">
+          </mat-form-field>
+          <mat-button-toggle (click)="numberToCharCode()">transform</mat-button-toggle>
+        </div>
+        <div style="margin-top: 30px">
+          <mat-form-field class="input-field">
+            <input class="input" matInput [(ngModel)]="charCode" placeholder="char">
+          </mat-form-field>
+          <mat-button-toggle (click)="charCodeToNumber()">transform</mat-button-toggle>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <!-- -->
   <mat-grid-tile>
     <mat-card class="card">
       <mat-card-title class="card-title"></mat-card-title>

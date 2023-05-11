@@ -11,6 +11,7 @@ import {RecordTimeAGgridComponent} from "./app-features/main/record-time-aggrid/
 const routes: Routes = [
   {
     path: '',
+    // component: UsefulToolsComponent
     component: MainComponent
   },
   {
