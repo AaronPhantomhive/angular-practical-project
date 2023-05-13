@@ -54,10 +54,8 @@ export class UsefulToolsComponent implements OnInit {
 
     this.num = 0;
 
-    let index = 1;
-    for (let i = this.charCode.length - 1; i >= 0; i--) {
-      this.num += (this.charCode.charCodeAt(i) - 64) * index;
-      index *= 26;
+    for (let i = this.charCode.length - 1, j = 1; i >= 0; i--, j *= 26) {
+      this.num += (this.charCode.charCodeAt(i) - 64) * j;
     }
 
   }
