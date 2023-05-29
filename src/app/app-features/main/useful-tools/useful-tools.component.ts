@@ -41,7 +41,10 @@ export class UsefulToolsComponent implements OnInit {
 
     let tempNum: number = this.num;
     while (tempNum > 0) {
-      const remainder = tempNum % 26;
+      let remainder = tempNum % 26;
+      if (remainder === 0) {
+        remainder = 26;
+      }
       this.charCode = String.fromCharCode(64 + remainder) + this.charCode;
       tempNum = (tempNum - remainder) / 26;
     }
